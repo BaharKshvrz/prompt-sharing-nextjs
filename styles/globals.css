@@ -16,6 +16,7 @@
   justify-content: center;
   padding: 120px 24px 160px 24px;
   pointer-events: none;
+  font-size: 1rem;
 }
 
 .main:before {
@@ -86,7 +87,7 @@
 }
 
 .head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+  @apply mt-5 text-4xl font-bold leading-[1.15] text-black sm:text-4xl;
 }
 
 .orange_gradient {
