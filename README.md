@@ -1,17 +1,25 @@
-Creating a CRUD in Next.js 13
+# Creating a CRUD in Next.js 13
 
-
+## What to install in projcet:
 npm install bcrypt mongodb mongoose next-auth
+<br/>
 
-// Google OAuth2
+## What we use in project:
+
+**Google OAuth2:**
 https://console.cloud.google.com/?pli=1
 
-// MongoDB
+**MongoDB:**
 https://www.mongodb.com/atlas
 
-
-
-What is NEXTAUTH_SECRET? 
+<br/>
+## What is NEXTAUTH_SECRET? 
 A random string is used to hash tokens sign/encrypt cookies and generate cryprographic keys. 
+<br/>
+HOW TO MAKE NEXTAUTH_SECRET in terminal: **openssl rand -base64 32**
+<br/>
 
-HOW TO MAKE NEXTAUTH_SECRET: openssl rand -base64 32
+![alt text](/public/assets/images/readme/posts.jpg)
+![alt text](/public/assets/images/readme/filter.jpg)
+![alt text](/public/assets/images/readme/create.jpg)
+
