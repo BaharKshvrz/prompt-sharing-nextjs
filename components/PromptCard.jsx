@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-const PromptCard = ({ post, handleEdit, handleDelete }) => {
+const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
   const { data: session } = useSession();
   const pathName = usePathname();
   const [ copied, setCopied ] = useState("");

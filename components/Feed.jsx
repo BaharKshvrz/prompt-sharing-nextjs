@@ -8,7 +8,11 @@ const Feed = () => {
    const [ allPosts, setAllPosts ] = useState([]);
    const [ searchedResults, setSearchedResults ] = useState([]);
 
-   const handleTagClick = () => {}
+   const handleTagClick = (tagName) => {
+      setSearchText(tagName);
+      const searchResult = filterPrompts(tagName);
+      setSearchedResults(searchResult);
+   }
 
    const handleSearchChange = (e) => {
       e.preventDefault();
@@ -50,8 +54,7 @@ const Feed = () => {
         </form>
 
         {/* All Prompts */}
-        {
-          searchText ? (  
+        { searchText ? (  
              <PromptCardList 
               data={ searchedResults }
               handleTagClick={handleTagClick}
